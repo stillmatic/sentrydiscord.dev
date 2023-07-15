@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import prisma from '../lib/database';
-import * as Fathom from 'fathom-client';
+// import * as Fathom from 'fathom-client';
 import Footer from '../components/Footer';
 import Question, { QuestionExternalLink } from '../components/Questions';
 import Stat from '../components/Stat';
@@ -22,7 +22,7 @@ function ExternalLink({
 
 export default function Home({ events, webhooks }) {
   const onStartClick = () => {
-    Fathom.trackGoal('JS44EPR1', 1);
+  //   Fathom.trackGoal('JS44EPR1', 1);
   };
 
   return (

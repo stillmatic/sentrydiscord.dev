@@ -17,10 +17,10 @@ export default function createMessage(event) {
       name: event.project_name,
       iconURL: "https://sentrydiscord.dev/icons/sentry.png",
     })
-    .setFooter({
-      text: "Please consider sponsoring us!",
-      iconURL: "https://sentrydiscord.dev/sponsor.png",
-    })
+    // .setFooter({
+    //   text: "Please consider sponsoring us!",
+    //   iconURL: "https://sentrydiscord.dev/sponsor.png",
+    // })
     .setTimestamp(parser.getTime(event))
 
   const projectName = parser.getProject(event);

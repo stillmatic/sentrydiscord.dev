@@ -1,6 +1,6 @@
 import { Fragment, useState } from 'react';
 import Link from 'next/link';
-import * as Fathom from 'fathom-client';
+// import * as Fathom from 'fathom-client';
 import Footer from '../components/Footer';
 import DonationBanner from '../components/DonationBanner';
 import Spinner from '../components/Spinner';
@@ -36,7 +36,7 @@ export default function Create() {
     event.preventDefault();
     setIsLoading(true);
     setError(null);
-    Fathom.trackGoal('4DROBFHL', 1);
+    // Fathom.trackGoal('4DROBFHL', 1);
 
     const response = await fetch('/api/create', {
       method: 'POST',
