@@ -18,7 +18,7 @@ export default function createMessage(event) {
       iconURL: "https://sentrydiscord.dev/icons/sentry.png",
     })
     .setFooter({
-      name: "Please consider sponsoring us!",
+      text: "Please consider sponsoring us!",
       iconURL: "https://sentrydiscord.dev/sponsor.png",
     })
     .setTimestamp(parser.getTime(event))
