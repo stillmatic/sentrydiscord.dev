@@ -1,12 +1,12 @@
 import { Fragment, useEffect } from "react";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 // import * as Fathom from "fathom-client";
 import "tailwindcss/tailwind.css";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-  const router = useRouter();
+  // const router = useRouter();
 
   // useEffect(() => {
   //   // Initialize Fathom when the app loads

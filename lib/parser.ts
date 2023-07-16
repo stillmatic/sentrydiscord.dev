@@ -1,4 +1,4 @@
-type SentryIssue = Record<string, any>;
+export type SentryIssue = Record<string, any>;
 
 export function getEvent(issue: SentryIssue) {
   return issue?.event ?? issue?.data?.issue ?? issue;

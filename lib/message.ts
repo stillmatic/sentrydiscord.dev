@@ -10,7 +10,8 @@ function cap(str: string, length: number) {
   return str.substr(0, length - 1) + "\u2026";
 }
 
-export default function createMessage(event) {
+export default function createMessage(event: parser.SentryIssue) {
+  const base_url = process.env.NEXT_PUBLIC_BASE_URL;
   const embed = new EmbedBuilder()
     .setColor(getColor(parser.getLevel(event)))
     .setAuthor({
